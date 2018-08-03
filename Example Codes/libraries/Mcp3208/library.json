@@ -1,0 +1,25 @@
+{
+  "name": "Mcp3208",
+  "keywords": "adc, serial, spi",
+  "description": "Arduino library for the MCP3208/3204 12 bit ADC. The library supports all features of the chip and uses SPI for communication.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/labfruits/mcp3208.git"
+  },
+  "authors":
+  {
+    "name": "Patrick Rogalla",
+    "email": "patrick@labfruits.com",
+    "maintainer": true
+  },
+  "dependencies":
+  {
+    "name": "SPI",
+    "frameworks": "arduino"
+  },
+  "version": "1.0.2",
+  "license": "MIT",
+  "examples": "examples/*/*.ino",
+  "frameworks": "arduino",
+  "platforms": "*"
+}
