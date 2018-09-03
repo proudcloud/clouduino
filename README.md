@@ -21,4 +21,4 @@ Clouduino is a fully open-source, WiFi mesh-enabled embedded development platfor
 
 - What advantages does this have over using an ESP?
 
--
+- What special things can you do with the Clouduino?
