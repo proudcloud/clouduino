@@ -15,6 +15,13 @@ Clouduino is a fully open-source, WiFi mesh-enabled embedded development platfor
 - 12-bit SAR ADC support
 - IEEE 802.11 b/g/n WiFi (w/ WEP, WPA, WPA2)
 
+## Getting Started
+
+### Installation
+
+Step 1: Get the Arduino IDE
+Step 2: Get PlatformIO
+
 ## FAQs
 
 - How is this different from a standard Arduino dev board?
