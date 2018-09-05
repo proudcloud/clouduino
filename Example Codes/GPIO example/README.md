@@ -1,5 +1,5 @@
 ﻿
-		USING THE GPIO PINS
+#		USING THE GPIO PINS
 
 Clouduino uses the Microchip MCP23S17 SPI I/O Expander Class created by Cort Buffington & Keith Neufeld. [https://github.com/n0mjs710/MCP23S17] 
 
@@ -25,7 +25,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
    *byteRead()
 
 
-			METHODS AND FUNCTIONS
+#			METHODS AND FUNCTIONS
 ==================================================
 
     MCP()
