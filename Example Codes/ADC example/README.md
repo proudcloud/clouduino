@@ -1,6 +1,6 @@
-﻿=======================================================
+﻿
 		USING THE ADC PINS
-=======================================================
+
 Clouduino uses the Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Serial Interface Class by Patrick Rogalla. [https://github.com/labfruits/mcp3208] 
 
   * 12-bit resolution
@@ -23,9 +23,9 @@ This guide will cover some of the commonly used methods in controlling the ADC p
    *getVref()
    *getAnalogRes()
 
-========================================================
+
             METHODS AND FUNCTIONS 
-========================================================    
+   
     Channel ch     
         SINGLE_0 = 0b1000,  // single channel 0 
         SINGLE_1 = 0b1001,  // single channel 1 
@@ -45,7 +45,7 @@ This guide will cover some of the commonly used methods in controlling the ADC p
         DIFF_3PN = 0b0110,  // differential channel 3 (input 6+,7-) 
         DIFF_3NP = 0b0111   // differential channel 3 (input 6-,7+) 
   
-========================================================  
+  
 
     MCP3208()
         -Description
@@ -60,7 +60,7 @@ This guide will cover some of the commonly used methods in controlling the ADC p
         -Example
             MCP3208 adc(3300, 16);    //3.3V Vref with SPI slave select at pin 16 
 
-========================================================  
+  
 
     read()
         -Description    
@@ -78,7 +78,7 @@ This guide will cover some of the commonly used methods in controlling the ADC p
         -Example 3
             sensor3_val = adc.read(MCP3208::0b0001);  // differential channel 0 (input 0-,1+))
 
-========================================================  
+ 
 
     testSplSpeed()
         -Description
@@ -93,7 +93,7 @@ This guide will cover some of the commonly used methods in controlling the ADC p
         -Example
             uint16_t speed = testSplSpeed(SINGLE_0, 3);
 
-========================================================  
+  
 
     toAnalog()
         -Description
@@ -108,7 +108,7 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             uint16_t raw = adc.read(MCP3208::SINGLE_0);
             uint16_t val = toAnalog(raw);
 
-========================================================  
+ 
 
     toDigital()
         -Description
@@ -124,7 +124,7 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             uint16_t val = toAnalog(raw);
             uint16_t lvl = toDigital(val);
 
-========================================================  
+  
 
     getVref()
         -Description
@@ -138,7 +138,7 @@ This guide will cover some of the commonly used methods in controlling the ADC p
         -Example
             ref = getVref();
 
-========================================================  
+  
 
     getAnalogRes()
         -Description
@@ -152,4 +152,4 @@ This guide will cover some of the commonly used methods in controlling the ADC p
         -Example
             uint16_t res = getAnalogRes();
 
-========================================================  
+ 

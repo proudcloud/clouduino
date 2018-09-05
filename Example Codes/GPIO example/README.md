@@ -1,6 +1,6 @@
-﻿=======================================================
+﻿
 		USING THE GPIO PINS
-=======================================================
+
 Clouduino uses the Microchip MCP23S17 SPI I/O Expander Class created by Cort Buffington & Keith Neufeld. [https://github.com/n0mjs710/MCP23S17] 
 
 The goal of their implementation is to provide a software interface that mimics the existing Arduino I/O functions:
@@ -24,9 +24,9 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
    *byteWrite()
    *byteRead()
 
-=======================================================
+
 			METHODS AND FUNCTIONS
-=======================================================
+
 
     MCP()
         -Description
@@ -43,7 +43,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
             MCP IOchip(0,5);     // create an object at address 0 called "Iochip" with SlaveSelect at GPIO pin 5 of ESP 
 				// By default Clouduino's GPIO chip is addressed to 0.
 
-======================================================
+
 
     begin()
         -Description
@@ -57,7 +57,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                IOChip.begin();
            }
 
-=======================================================
+
 
     pinMode()
         -Description
@@ -84,7 +84,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
 		IOchip.pinMode(0B0000111100001111); // sets pins 1-4 and 9-12 as input, 5-8 and 13-16 as output
 	     }
 
-=======================================================
+
 
     pullupMode()
         -Description
@@ -109,7 +109,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 IOchip.pullupMode(0B0000111100000000); // enable the pull-ups on pins 9-12
             }
 
-=======================================================
+
 
     inputInvert()
         -Description
@@ -134,7 +134,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 IOchip.inputInvert(0B0000000000001111); // enable inversion on pins 1-4
             }
 
-=======================================================
+
 
     digitalWrite()
         -Description
@@ -158,7 +158,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 IOchip.digitalWrite(0B1100000000110000); // Set 5, 6, 15 & 16 to high, 7,8, 13 & 14 to low - inputs ignored
             }
 
-=======================================================
+
 
     digitalRead()
         -Description
@@ -183,7 +183,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 val = IOchip.digitalRead(); // assigns the value of all 16 I/O pins to twovalue
             }
 
-=======================================================
+
 
     wordWrite()
         -Description
@@ -201,7 +201,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 IOchip.wordWrite(0x12, 0xFF00); // Set GPIOA to 0x00 and GPIOB to OxFF
             }
 
-=======================================================
+
 
     byteWrite()
         -Description
@@ -219,7 +219,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 IOchip.byteWrite(0x13, 0xF0); // Set GPIOB (portB) to 0xF0 (0B11110000) 
             }
 
-=======================================================
+
 
     byteRead()
         -Description
@@ -237,4 +237,3 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 val = IOchip.byteRead(0x12); // Read GPIOA (portA)
             }
 
-=======================================================
