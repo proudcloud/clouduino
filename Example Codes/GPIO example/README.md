@@ -13,16 +13,16 @@ The class does include several more methods that can be used to simplify configu
 
 This guide will cover some of the commonly used methods in controlling the GPIO pins for Clouduino. 
 
-   -MCP()
-   -begin()
-   -pinMode()
-   -pullupMode()
-   -inputInvert()
-   -digitalWrite()
-   -digitalRead()
-   -wordWrite()
-   -*byteWrite()
-   -byteRead()
+   * MCP()
+   * begin()
+   * pinMode()
+   * pullupMode()
+   * inputInvert()
+   * digitalWrite()
+   * digitalRead()
+   * wordWrite()
+   * *byteWrite()
+   * byteRead()
 
 
 #			METHODS AND FUNCTIONS

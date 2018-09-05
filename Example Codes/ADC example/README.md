@@ -11,17 +11,17 @@ Clouduino uses the Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Seria
 
 This guide will cover some of the commonly used methods in controlling the ADC pins for Clouduino. 
 
-   -Channel
-   -MCP3208()
-   -pinMode()
-   -digitalWrite()
-   -digitalRead()
-   -read()
-   -testSplSpeed()
-   -toAnalog()
-   -toDigital()
-   -getVref()
-   -getAnalogRes()
+   * Channel
+   * MCP3208()
+   * pinMode()
+   * digitalWrite()
+   * digitalRead()
+   * read()
+   * testSplSpeed()
+   * toAnalog()
+   * toDigital()
+   * getVref()
+   * getAnalogRes()
 
 
 #            METHODS AND FUNCTIONS 
