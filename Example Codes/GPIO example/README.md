@@ -1,7 +1,9 @@
-=======================================================
+ï»¿=======================================================
 		USING THE GPIO PINS
 =======================================================
-Clouduino uses the Microchip MCP23S17 SPI I/O Expander Class created by Cort Buffington & Keith Neufeld. The goal of their implementation is to provide a software interface that mimics the existing Arduino I/O functions:
+Clouduino uses the Microchip MCP23S17 SPI I/O Expander Class created by Cort Buffington & Keith Neufeld. [https://github.com/n0mjs710/MCP23S17] 
+
+The goal of their implementation is to provide a software interface that mimics the existing Arduino I/O functions:
 
   * pinMode(pin, mode)
   * digitalWrite(pin, value)
@@ -9,7 +11,7 @@ Clouduino uses the Microchip MCP23S17 SPI I/O Expander Class created by Cort Buf
 
 The class does include several more methods that can be used to simplify configuration in the same "Arduino-ish" way, methods for writing/reading 8-bit registers (configuration and I/O ports) at once, as well as writing/reading consecutive registers (allowing all 16 bits to be read or written with one method ca ll). <See MCP23S17 Manual.txt in libaries folder for more details.>
 
-This guide will cover some of the commonly used methods in controlling the GPIO's for Clouduino. 
+This guide will cover some of the commonly used methods in controlling the GPIO pins for Clouduino. 
 
    *MCP()
    *begin()
@@ -23,7 +25,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO'
    *byteRead()
 
 =======================================================
-			METHODS
+			METHODS AND FUNCTIONS
 =======================================================
 
     MCP()
@@ -45,7 +47,7 @@ This guide will cover some of the commonly used methods in controlling the GPIO'
 
     begin()
         -Description
-            Enable the SPI bus and configure the slave select pin for this object. You must call this in the Arduino “void setup()” function.
+            Enable the SPI bus and configure the slave select pin for this object. You must call this in the Arduino ï¿½void setup()ï¿½ function.
         -Synatax
             object.name.begin();
         -Parameters
