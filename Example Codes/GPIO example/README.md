@@ -1,7 +1,7 @@
 ﻿
 #		USING THE GPIO PINS
 
-Clouduino uses the Microchip MCP23S17 SPI I/O Expander Class created by Cort Buffington & Keith Neufeld. [https://github.com/n0mjs710/MCP23S17] 
+Clouduino uses the Microchip MCP23S17 SPI I/O Expander Class created by [Cort Buffington & Keith Neufeld]. (https://github.com/n0mjs710/MCP23S17) 
 
 The goal of their implementation is to provide a software interface that mimics the existing Arduino I/O functions:
 
@@ -13,21 +13,21 @@ The class does include several more methods that can be used to simplify configu
 
 This guide will cover some of the commonly used methods in controlling the GPIO pins for Clouduino. 
 
-   *MCP()
-   *begin()
-   *pinMode()
-   *pullupMode()
-   *inputInvert()
-   *digitalWrite()
-   *digitalRead()
-   *wordWrite()
-   *byteWrite()
-   *byteRead()
+   -MCP()
+   -begin()
+   -pinMode()
+   -pullupMode()
+   -inputInvert()
+   -digitalWrite()
+   -digitalRead()
+   -wordWrite()
+   -*byteWrite()
+   -byteRead()
 
 
 #			METHODS AND FUNCTIONS
-==================================================
 
+```
     MCP()
         -Description
             Instantiates the GPIO expander chip as an object.
@@ -42,9 +42,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
         -Example
             MCP IOchip(0,5);     // create an object at address 0 called "Iochip" with SlaveSelect at GPIO pin 5 of ESP 
 				// By default Clouduino's GPIO chip is addressed to 0.
-
-==================================================
-
+```
+```
     begin()
         -Description
             Enable the SPI bus and configure the slave select pin for this object. You must call this in the Arduino �void setup()� function.
@@ -56,9 +55,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
            void setup() {
                IOChip.begin();
            }
-
-==================================================
-
+```
+```
     pinMode()
         -Description
             Configure pin(s) as either input or output on the selected object (device specified by an address)
@@ -83,9 +81,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
 	    void setup() {
 		IOchip.pinMode(0B0000111100001111); // sets pins 1-4 and 9-12 as input, 5-8 and 13-16 as output
 	     }
-
-==================================================
-
+```
+```
     pullupMode()
         -Description
             Configure the weak pull-up resistors on pins defined as inputs
@@ -109,8 +106,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 IOchip.pullupMode(0B0000111100000000); // enable the pull-ups on pins 9-12
             }
 
-==================================================
-
+```
+```
     inputInvert()
         -Description
             Configure inversion on pins configured as inputs.
@@ -133,9 +130,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
             void setup() {
                 IOchip.inputInvert(0B0000000000001111); // enable inversion on pins 1-4
             }
-
-==================================================
-
+```
+```
     digitalWrite()
         -Description
             Write a "HIGH" or "LOW" value to a digital I/O pin(s)
@@ -157,9 +153,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
             void loop() {
                 IOchip.digitalWrite(0B1100000000110000); // Set 5, 6, 15 & 16 to high, 7,8, 13 & 14 to low - inputs ignored
             }
-
-==================================================
-
+```
+```
     digitalRead()
         -Description
             Reads the value of input pin(s), either "HIGH" ("1") or "LOW" ("0)
@@ -182,9 +177,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 int val;
                 val = IOchip.digitalRead(); // assigns the value of all 16 I/O pins to twovalue
             }
-
-==================================================
-
+```
+```
     wordWrite()
         -Description
             This is an advanced method to write a register pair in the MCP23S17. This class operates the MCP23S17 in "BANK=0" mode. The intention is that a registers for both ports may be written by supplying a single word as an argument. The low byte is written to the register address supplied, and the high byte to the next higher register address.
@@ -200,9 +194,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
             void loop() {
                 IOchip.wordWrite(0x12, 0xFF00); // Set GPIOA to 0x00 and GPIOB to OxFF
             }
-
-==================================================
-
+```
+```
     byteWrite()
         -Description
             This is an advanced method to write any single register in the MCP23S17.
@@ -218,9 +211,8 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
             void loop() {
                 IOchip.byteWrite(0x13, 0xF0); // Set GPIOB (portB) to 0xF0 (0B11110000) 
             }
-
-==================================================
-
+```
+```
     byteRead()
         -Description
             This is an advanced method to read any single register in the MCP23S17.
@@ -236,5 +228,4 @@ This guide will cover some of the commonly used methods in controlling the GPIO 
                 int val;
                 val = IOchip.byteRead(0x12); // Read GPIOA (portA)
             }
-
-==================================================
+```

@@ -1,7 +1,7 @@
 ﻿
 #		USING THE ADC PINS
 
-Clouduino uses the Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Serial Interface Class by Patrick Rogalla. [https://github.com/labfruits/mcp3208] 
+Clouduino uses the Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Serial Interface Class by [Patrick Rogalla]. (https://github.com/labfruits/mcp3208) 
 
   * 12-bit resolution
   * 8 input channels
@@ -11,22 +11,22 @@ Clouduino uses the Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Seria
 
 This guide will cover some of the commonly used methods in controlling the ADC pins for Clouduino. 
 
-   *Channel
-   *MCP3208()
-   *pinMode()
-   *digitalWrite()
-   *digitalRead()
-   *read()
-   *testSplSpeed()
-   *toAnalog()
-   *toDigital()
-   *getVref()
-   *getAnalogRes()
+   -Channel
+   -MCP3208()
+   -pinMode()
+   -digitalWrite()
+   -digitalRead()
+   -read()
+   -testSplSpeed()
+   -toAnalog()
+   -toDigital()
+   -getVref()
+   -getAnalogRes()
 
 
 #            METHODS AND FUNCTIONS 
-==================================================
 
+```
     Channel ch     
         SINGLE_0 = 0b1000,  // single channel 0 
         SINGLE_1 = 0b1001,  // single channel 1 
@@ -45,9 +45,8 @@ This guide will cover some of the commonly used methods in controlling the ADC p
         DIFF_2NP = 0b0101,  // differential channel 2 (input 5-,5+) 
         DIFF_3PN = 0b0110,  // differential channel 3 (input 6+,7-) 
         DIFF_3NP = 0b0111   // differential channel 3 (input 6-,7+) 
-  
-==================================================  
-
+```  
+``` 
     MCP3208()
         -Description
             Initiates a MCP3208 object. The chip select pin must be already configured as output. The default SPI interface will be used for communication.
@@ -60,9 +59,8 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             none
         -Example
             MCP3208 adc(3300, 16);    //3.3V Vref with SPI slave select at pin 16 
-
-==================================================  
-
+```
+```
     read()
         -Description    
             Reads the supplied channel. The SPI interface must be initialized and put in a usable state before calling this function.
@@ -78,9 +76,8 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             sensor2_val = adc.read(MCP3208::DIFF_0NP); //Read differential channel 0 (input 0+,1-)
         -Example 3
             sensor3_val = adc.read(MCP3208::0b0001);  // differential channel 0 (input 0-,1+))
-
- ==================================================
-
+```
+```
     testSplSpeed()
         -Description
             Performs a sampling speed test. The SPI interface must be initialized and put in a usable state before calling this function.
@@ -93,9 +90,8 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             The average sampling time needed for one read in us.
         -Example
             uint16_t speed = testSplSpeed(SINGLE_0, 3);
-
-==================================================  
-
+```
+```
     toAnalog()
         -Description
             Converts the supplied raw value to an analog value in mV based on the defined reference voltage.
@@ -109,8 +105,8 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             uint16_t raw = adc.read(MCP3208::SINGLE_0);
             uint16_t val = toAnalog(raw);
 
-================================================== 
-
+```
+```
     toDigital()
         -Description
             Converts the supplied analog value to the digital representation based on the defined reference voltage.
@@ -124,9 +120,8 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             uint16_t raw = adc.read(MCP3208::SINGLE_0);
             uint16_t val = toAnalog(raw);
             uint16_t lvl = toDigital(val);
-
-==================================================  
-
+```
+```
     getVref()
         -Description
             Returns the reference voltage.
@@ -138,9 +133,8 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             the configured reference voltage in mV.
         -Example
             ref = getVref();
-
-==================================================  
-
+```
+```
     getAnalogRes()
         -Description
             Returns the analog resolution in µV based on the defined reference voltage.
@@ -152,5 +146,4 @@ This guide will cover some of the commonly used methods in controlling the ADC p
             The analog resolution in µV.
         -Example
             uint16_t res = getAnalogRes();
-
-================================================== 
+```
