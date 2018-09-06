@@ -8,6 +8,7 @@ Clouduino is a fully open-source, WiFi mesh-enabled embedded development platfor
 
 - CPU: 160 MHz
 - L106 32-bit RISC Tensilica Xtensa Diamond Standard 106Micro
+- 3.3V supply power
 - Flash Memory: 4MB
 - 16 GPIO pins
 - 8 analog input channels with 12-bit resolution (programmable as single-ended or pseudo-differential pairs)
