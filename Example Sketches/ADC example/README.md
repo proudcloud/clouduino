@@ -26,7 +26,7 @@ Here are commonly used methods in controlling the ADC pins for Clouduino.
 
 ##            Methods and Functions
 
-**Channel ch**     
+*Channel ch*     
 
     SINGLE_0 = 0b1000,      // single channel 0 
     SINGLE_1 = 0b1001,      // single channel 1 
@@ -47,7 +47,9 @@ Here are commonly used methods in controlling the ADC pins for Clouduino.
     DIFF_3NP = 0b0111       // differential channel 3 (input 6-,7+) 
 
 
-**MCP3208()**
+
+
+*MCP3208()*
 
 Description
 
@@ -59,8 +61,8 @@ Syntax
 
 Parameters
 
-    vref: ADC reference voltage in mV. Fixed at 3.3V for Clouduino.
-    csPin: pin number to use for chip select. Fixed at GPIO pin 16 for Clouduino.
+    vref:   ADC reference voltage in mV. Fixed at 3.3V for Clouduino.
+    csPin:  pin number to use for chip select. Fixed at GPIO pin 16 for Clouduino.
 
 Returns    
 
@@ -71,7 +73,9 @@ Example
     MCP3208 adc(3300, 16);    //3.3V Vref with SPI slave select at pin 16 
 
 
-**read()**
+
+
+*read()*
 
 Description    
 
@@ -102,7 +106,9 @@ Example 3
     sensor3_val = adc.read(MCP3208::0b0001);  // differential channel 0 (input 0-,1+))
 
 
-**testSplSpeed()**
+
+
+*testSplSpeed()*
 
 Description
 
@@ -114,8 +120,8 @@ Syntax
 
 Parameters
 
-    ch: the channel to use for the speed test.
-    num: the number of reads to perform.
+    ch:     the channel to use for the speed test.
+    num:    the number of reads to perform.
 
 Returns
 
@@ -126,7 +132,9 @@ Example
     uint16_t speed = testSplSpeed(SINGLE_0, 3);
 
 
-**toAnalog()**
+
+
+*toAnalog()*
 
 Description
 
@@ -150,7 +158,9 @@ Example
     uint16_t val = toAnalog(raw);
 
 
-**toDigital()**
+
+
+*toDigital()*
 
 Description
 
@@ -175,7 +185,9 @@ Example
     uint16_t lvl = toDigital(val);
 
 
-**getVref()**
+
+
+*getVref()*
 
 Description
 
@@ -198,7 +210,9 @@ Example
     ref = getVref();
 
 
-**getAnalogRes()**
+
+
+*getAnalogRes()*
 
 Description
 

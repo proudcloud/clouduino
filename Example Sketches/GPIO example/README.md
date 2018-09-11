@@ -26,7 +26,7 @@ Here are commonly used methods and functions for controlling the GPIO pins of Cl
 ##			METHODS AND FUNCTIONS
 
 
-**MCP()**
+*MCP()*
 
 Description
 
@@ -52,7 +52,9 @@ Example
 				        // By default Clouduino's GPIO chip is addressed to 0.
 
 
-**begin()**
+
+
+*begin()*
 
 Description
 
@@ -73,7 +75,9 @@ Example
     }
 
 
-**pinMode()**
+
+
+*pinMode()*
 
 Description
 
@@ -111,7 +115,9 @@ Example 2
     }
 
 
-**pullupMode()**
+
+
+*pullupMode()*
 
 Description
 
@@ -147,7 +153,9 @@ Example 2
     }
 
 
-**inputInvert()**
+
+
+*inputInvert()*
 
 Description
 
@@ -183,7 +191,9 @@ Example 2
     }
 
 
-**digitalWrite()**
+
+
+*digitalWrite()*
 
 Description
 
@@ -218,7 +228,9 @@ Example 2
     }
 
 
-**digitalRead()**
+
+
+*digitalRead()*
 
 Description
 
@@ -254,7 +266,9 @@ Example 2
     }
 
 
-**wordWrite()**
+
+
+*wordWrite()*
 
 Description
 
@@ -281,7 +295,9 @@ Example
     }
 
 
-**byteWrite()**
+
+
+*byteWrite()*
 
 Description
 
@@ -308,7 +324,9 @@ Example
     }
 
 
-**byteRead()**
+
+
+*byteRead()*
 
 Description
 
