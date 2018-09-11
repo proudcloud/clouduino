@@ -25,7 +25,7 @@
 
 
 #  Debugging and Troubleshooting #
-- Failed upload is a common issue with programming ESP8266, (eg: "espcomm_sync failed" error), when encountered please try the following methods:
+Failed upload is a common issue with programming ESP8266, (eg: "espcomm_sync failed" error), when encountered please try the following methods:
  - Replug the Clouduino. Failed upload are usually resolved by simply reconnecting Clouduino to the USB port, while holding down the switch for the first 3 seconds of connection and then uploading again.
  - Check if powersupply is sufficient, VCC pin should receive a stable 3.3V. Any lower than 2.9V supplied power causes upload to fail nor would the Clouduino function properly on normal mode.
  - Use a very short USB cable as much as possible. Very long cables to tend fail UART communication due to the delay induced by excess cable length.
