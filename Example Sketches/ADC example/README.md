@@ -1,7 +1,7 @@
 ﻿
 #		USING THE ADC PINS
 
-Clouduino uses the [Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Serial Interface Class by Patrick Rogalla](https://github.com/labfruits/mcp3208).
+Clouduino uses the [Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Serial Interface Class](https://github.com/labfruits/mcp3208).
 
   * 12-bit resolution
   * 8 input channels
@@ -26,7 +26,7 @@ Here are commonly used methods in controlling the ADC pins for Clouduino.
 
 ##            Methods and Functions
 
-*Channel ch*     
+### Channel ch      
 
     SINGLE_0 = 0b1000,      // single channel 0 
     SINGLE_1 = 0b1001,      // single channel 1 
@@ -49,7 +49,7 @@ Here are commonly used methods in controlling the ADC pins for Clouduino.
 
 
 
-*MCP3208()*
+### MCP3208() ###
 
 Description
 
@@ -75,7 +75,7 @@ Example
 
 
 
-*read()*
+### read() ###
 
 Description    
 
@@ -108,7 +108,7 @@ Example 3
 
 
 
-*testSplSpeed()*
+### testSplSpeed() ###
 
 Description
 
@@ -134,7 +134,7 @@ Example
 
 
 
-*toAnalog()*
+### toAnalog() ###
 
 Description
 
@@ -160,7 +160,7 @@ Example
 
 
 
-*toDigital()*
+### toDigital() ###
 
 Description
 
@@ -187,7 +187,7 @@ Example
 
 
 
-*getVref()*
+### getVref() ###
 
 Description
 
@@ -212,7 +212,7 @@ Example
 
 
 
-*getAnalogRes()*
+### getAnalogRes() ###
 
 Description
 
