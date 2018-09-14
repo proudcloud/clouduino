@@ -1,9 +1,9 @@
 #include <SPI.h>
 #include <MCP23S17.h>
 
-MCP IOchip(0,5);  // create an object at address 0 called "IOchip" with SlaveSelect at GPIO5 pin of ESP 
-                  // address of the device configured with address (pins A0, A1, A2)
-                  // In this case address 0 means to ground A0, A1, A2
+MCP IOchip(0,5);  // create an object at address 0 called "IOchip" with SlaveSelect at GPIO5 pin of ESP             
+                  // By default Clouduino's GPIO chip is addressed to 0.
+
 void setup() {
   // put your setup code here, to run once:
   // Serial.begin(115200);
