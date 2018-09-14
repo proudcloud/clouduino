@@ -3,3 +3,5 @@ painlessMesh makes use of the following libraries, which can be installed throug
 + [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
 + [TaskScheduler](https://github.com/arkhipenko/TaskScheduler)
 + [ESPAsyncTCP (ESP8266)](https://github.com/me-no-dev/ESPAsyncTCP) 
+
+For information on installing libraries, see: http://www.arduino.cc/en/Guide/Libraries
