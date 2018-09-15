@@ -5,7 +5,7 @@
     - For MAC: Open terminal and type: "ls /dev/*"
     - For Linux: Open terminal and type: "ls /dev/tty*"
 3. Choose Tools Menu -> Board -> "Generic ESP8266 Module" under ESP8266 Modules
-    ![Tools_Settings](/docs/images/tools_settings.png)
+    ![choosing_board](/docs/images/choosing_board.png)
 4. Suggested Tools settings:
     - Flash Mode -> "DIO"
     - Flash Size -> “512K (no SPIFFS)”
@@ -19,6 +19,7 @@
     - Builtin Led -> “2”
     - Upload Speed -> “921600” (Optional, for fastest upload speed)
     - Erase Flash -> “Only Sketch”
+    ![tools_settings](/docs/images/tools_settings.png)
 5. Choose the correct serial port for your board.
     - Choose Tools -> Port -> comX or /dev/tty.usbmodemXXXXX. (where X marks a sequentially or randomly assigned number.
 6. Click the Upload icon.
@@ -28,9 +29,9 @@ Note: Enter Normal mode by toggling the switch to "Normal mode" then press Reset
 #  Debugging and Troubleshooting #
 Failed upload is a common issue with programming ESP8266, (eg: "espcomm_sync failed" error), when encountered please try the following methods:
  - Toggle switch to Flash mode then press reset button.
- - Check if powersupply is sufficient, VCC pin should receive a stable 3.3V. Any lower than 2.9V supplied power causes upload to fail nor would the Clouduino function properly even on normal mode.
+ - Check if powersupply is sufficient. VCC pin should receive a stable 3.3V. Any lower than 2.9V supplied power causes upload to fail nor would the Clouduino function properly even on normal mode.
  - Use a very short USB cable as much as possible. Very long cables to tend fail UART communication due to delay induced by excess cable length.
 
 Double-check your code:
- - Make sure to include SPI.h for anything involving GPIO or ADC pin applications
+ - Make sure to include SPI.h for anything involving GPIO or ADC pin applications to enable slave select on ESP.
  - Don't forget to include MCP23S17.h if utilizing GPIO pins, and MCP3208.h for analog reading and conversion using analog pins. 
