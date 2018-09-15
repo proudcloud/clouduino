@@ -8,14 +8,14 @@ This document explains how to connect your Clouduino board to the computer and u
 - Select the board type and port
 - Upload the program
 - Sample Projects and Tutorials
-#
+
 ## Clone or download the Clouduino Github repository ##
 To get started, you must first clone or download then unzip the [Clouduino repository](https://github.com/proudcloud/clouduino).
     ![clouduino_repo](/docs/images/github.PNG)
-#
+
 ## Use your Clouduino Stratus on the Arduino Desktop IDE ##
 If you want to program your Clouduino Stratus then you will need to install the [Arduino Desktop IDE](https://www.arduino.cc/en/Main/Software). To connect the Clouduino Stratus to your computer, you’ll need a Mini-B USB cable. This also provides power to the board. 
-#
+
 ## Install the board drivers and other library dependencies ##
 
 Let's start with installing the ESP8266 board driver with boards manager in Arduino IDE. 
@@ -40,7 +40,7 @@ You have to import these libraries to Arduino IDE by simple following the steps 
 3. Repeat step 2 for MCP23S17-master ZIP file.
    
 Note that you only have to install the ESP8266 board driver and the two essential libraries once. Do, however, check for library updates often at the library manager!
-#
+
 ## Open your first sketch ##
 You are now ready to try out your first sketch in Arduino IDE.
  1.  Open File menu > Go to Clouduino folder directory > example folder > Blink folder > Open Blink.ino
@@ -50,7 +50,7 @@ Blink LED circuit - Breadboard:
     ![Blink_Breadboard](/example/Blink/Blink_fritzing_Breadboard.png)
 Blink LED circuit - Schematics:
     ![Blink_Schematics](/example/Blink/Blink_fritzing_Schem.png)
-#   
+
 ## Upload your first sketch 
 
 1. Enter Flash mode by toggling the switch to "Flash mode" the first 3 seconds upon connecting Clouduino to a USB port on your device. This mode allows sketches to be uploaded to your Clouduino. (For testers: Toggle switch for perfboard prototype, OMRON switch for PCB)
@@ -80,7 +80,7 @@ Blink LED circuit - Schematics:
 6. Click the Upload icon.
 
 Note: Enter Normal mode by toggling the switch to "Normal mode" then press Reset button.  This is to run your program after flashing a program on your clouduino.
-#
+
 ##  Debugging and Troubleshooting ##
 Failed upload is a common issue with programming ESP8266, (eg: "espcomm_sync failed" error), when encountered please try the following methods:
  - Toggle switch to Flash mode then press reset button.
@@ -90,7 +90,7 @@ Failed upload is a common issue with programming ESP8266, (eg: "espcomm_sync fai
  Double-check your code:
  - Make sure to always include SPI.h for anything involving GPIO or ADC pin applications to enable slave select on ESP.
  - Don't forget to include MCP23S17.h if utilizing GPIO pins, and MCP3208.h for analog reading and conversion using analog pins.
-#
+
 ## Sample Projects and Tutorials ##
 Now that you have set up and programmed your Clouduino Stratus, you may learn more ideas on how to control your Stratus by trying other sample sketches at [example](https://github.com/proudcloud/clouduino/tree/master/example) folder such as controlling GPIO pins and doing analog reading using ADC pins. Hopefully these would give you insights and inspiration while exploring possibilities with Stratus.
  - Blinky - A sketch that uses all 16 available GPIO pins of Clouduino Stratus to blink LEDs.
