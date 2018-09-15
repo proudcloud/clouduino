@@ -1,6 +1,6 @@
 # Uploading Sketches to Clouduino using Arduino IDE #
-1. Enter Flash mode by holding down the switch the first 3 seconds upon connecting Clouduino to a USB port on your device.
-2. Check the Port number.
+1. Enter Flash mode by toggling the switch to "Flash mode" the first 3 seconds upon connecting Clouduino to a USB port on your device. This mode allows sketches to be uploaded to your Clouduino. (For testers: Toggle switch for perfboard prototype, OMRON switch for PCB)
+2. Check the Port number designated to your Clouduino.
     - For Windows: Find the COM Port number in the Device Manager
     - For MAC: Open terminal and type: "ls /dev/*"
     - For Linux: Open terminal and type: "ls /dev/tty*"
@@ -23,10 +23,14 @@
     - Choose Tools -> Port -> comX or /dev/tty.usbmodemXXXXX. (where X marks a sequentially or randomly assigned number.
 6. Click the Upload icon.
 
+Note: Enter Normal mode by toggling the switch to "Normal mode" then press Reset button.  This is to run your program after flashing a program on your clouduino.
 
 #  Debugging and Troubleshooting #
 Failed upload is a common issue with programming ESP8266, (eg: "espcomm_sync failed" error), when encountered please try the following methods:
- - Replug the Clouduino. Failed upload are usually resolved by simply reconnecting Clouduino to the USB port, while holding down the switch for the first 3 seconds of connection and then uploading again.
- - Check if powersupply is sufficient, VCC pin should receive a stable 3.3V. Any lower than 2.9V supplied power causes upload to fail nor would the Clouduino function properly on normal mode.
- - Use a very short USB cable as much as possible. Very long cables to tend fail UART communication due to the delay induced by excess cable length.
- 
+ - Toggle switch to Flash mode then press reset button.
+ - Check if powersupply is sufficient, VCC pin should receive a stable 3.3V. Any lower than 2.9V supplied power causes upload to fail nor would the Clouduino function properly even on normal mode.
+ - Use a very short USB cable as much as possible. Very long cables to tend fail UART communication due to delay induced by excess cable length.
+
+Doublecheck your code:
+ - Make sure to include SPI.h for anything involving GPIO or ADC pin applications
+ - Don't forget to include MCP23S17.h if utilizing GPIO pins, and MCP3208.h for analog reading. 
