@@ -10,9 +10,8 @@ This document explains how to connect your Clouduino board to the computer and u
 - Sample Projects and Tutorials
 #
 ## Clone or download the Clouduino Github repository ##
-  To get started, you must first clone or download then unzip the [Clouduino repository](https://github.com/proudcloud/clouduino).
-  
-  ![clouduino_repo](/docs/images/github.png)
+To get started, you must first clone or download then unzip the [Clouduino repository](https://github.com/proudcloud/clouduino).
+    ![clouduino_repo](/docs/images/github.png)
 #
 ## Use your Clouduino Stratus on the Arduino Desktop IDE ##
 If you want to program your Clouduino Stratus then you will need to install the [Arduino Desktop IDE](https://www.arduino.cc/en/Main/Software). To connect the Clouduino Stratus to your computer, you’ll need a Mini-B USB cable. This also provides power to the board. 
@@ -23,7 +22,7 @@ Let's start with installing the ESP8266 board driver with boards manager in Ardu
 
 1. Start Arduino. Click on File menu then select Preferences.
 2. Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into Additional Board Manager URLs field. You can add multiple URLs, separating them with commas. 
-    ![preferences](/docs/images/preferences.png)
+    
 3. Open Boards Manager from Tools > Board menu and install the latest stable esp8266 platform 
     ![boards_manager](/docs/images/boards_manager.png)
 4. Go to Tools again >  Board > Select Generic ESP8266 Module.
