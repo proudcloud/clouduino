@@ -47,9 +47,9 @@ You are now ready to try out your first sketch in Arduino IDE.
  2.  Under example/Blink folder, you will see a breadboard and schematic for Blink, showing a circuit with Clouduino connected to an LED - Assemble the circuit.
 
 Blink LED circuit - Breadboard:
-    ![Blink_Breadboard](/example/Blink/Blink_fritzing_Breadboard.png)
+    ![Blink_Breadboard](/example/Blink/Blink_fritzing_Breadboard.PNG)
 Blink LED circuit - Schematics:
-    ![Blink_Schematics](/example/Blink/Blink_fritzing_Schem.png)
+    ![Blink_Schematics](/example/Blink/Blink_fritzing_Schem.PNG)
 
 ## Upload your first sketch 
 
