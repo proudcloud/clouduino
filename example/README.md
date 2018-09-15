@@ -19,6 +19,7 @@
     - Builtin Led -> “2”
     - Upload Speed -> “921600” (Optional, for fastest upload speed)
     - Erase Flash -> “Only Sketch”
+
     ![tools_settings](/docs/images/tools_settings.png)
 5. Choose the correct serial port for your board.
     - Choose Tools -> Port -> comX or /dev/tty.usbmodemXXXXX. (where X marks a sequentially or randomly assigned number.
