@@ -11,7 +11,7 @@ This document explains how to connect your Clouduino board to the computer and u
 #
 ## Clone or download the Clouduino Github repository ##
 To get started, you must first clone or download then unzip the [Clouduino repository](https://github.com/proudcloud/clouduino).
-    ![clouduino_repo](/docs/images/github.png)
+    ![clouduino_repo](/docs/images/github.PNG)
 #
 ## Use your Clouduino Stratus on the Arduino Desktop IDE ##
 If you want to program your Clouduino Stratus then you will need to install the [Arduino Desktop IDE](https://www.arduino.cc/en/Main/Software). To connect the Clouduino Stratus to your computer, you’ll need a Mini-B USB cable. This also provides power to the board. 
