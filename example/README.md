@@ -5,7 +5,7 @@
     - For MAC: Open terminal and type: "ls /dev/*"
     - For Linux: Open terminal and type: "ls /dev/tty*"
 3. Choose Tools Menu -> Board -> "Generic ESP8266 Module" under ESP8266 Modules
-    ![Tools_Settings](Tools_Settings.png)
+    ![Tools_Settings](/docs/images/tools_settings.png)
 4. Suggested Tools settings:
     - Flash Mode -> "DIO"
     - Flash Size -> “512K (no SPIFFS)”
@@ -31,6 +31,6 @@ Failed upload is a common issue with programming ESP8266, (eg: "espcomm_sync fai
  - Check if powersupply is sufficient, VCC pin should receive a stable 3.3V. Any lower than 2.9V supplied power causes upload to fail nor would the Clouduino function properly even on normal mode.
  - Use a very short USB cable as much as possible. Very long cables to tend fail UART communication due to delay induced by excess cable length.
 
-Doublecheck your code:
+Double-check your code:
  - Make sure to include SPI.h for anything involving GPIO or ADC pin applications
- - Don't forget to include MCP23S17.h if utilizing GPIO pins, and MCP3208.h for analog reading. 
+ - Don't forget to include MCP23S17.h if utilizing GPIO pins, and MCP3208.h for analog reading and conversion using analog pins. 
