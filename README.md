@@ -2,7 +2,9 @@
 
 ![Logo](logo.png)
 
-Clouduino is a fully open-source, WiFi mesh-enabled embedded development platform.
+Clouduino is a fully open-source, WiFi mesh-enabled embedded development platform. 
+
+This project is still at it's infancy. At the moment, the schematic diagram, breadboard prototype, and PCB layout for the first version is available for building the first version of the board: Clouduino Stratus. We also included sample code to get you started. We will be producing limited quantities of the board soon. In the meantime, let's build our own boards, send us your feed back and help this project grow.
 
 ## Specs
 
@@ -19,15 +21,13 @@ Clouduino is a fully open-source, WiFi mesh-enabled embedded development platfor
 
 ## Getting Started
 
+
+### Build Your Board
+
+Schematic diagrams and breadboard prototype can be found in this folder
+
 ### Installation
 
-Step 1: Get the Arduino IDE
-Step 2: Get PlatformIO
-
-## FAQs
-
-- How is this different from a standard Arduino dev board?
-
-- What advantages does this have over using an ESP?
-
-- What special things can you do with the Clouduino?
+1. Download and install Arduino IDE
+2. Follow thjis guide to configure the IDE and uploade your first sketch
+3. Follow our examples
