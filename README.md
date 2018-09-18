@@ -25,7 +25,7 @@ Check out our Get Started Guide [here](https://github.com/proudcloud/clouduino/t
 ## Quickstart Guide
 
 1. Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software)
-2. Follow [this guide](https://github.com/proudcloud/clouduino/tree/master/getStarted) to configure the IDE and uploade your first sketch
+2. Follow [this guide](https://github.com/proudcloud/clouduino/tree/master/getStarted) to configure the IDE and upload your first sketch
 3. Follow our [examples](https://github.com/proudcloud/clouduino/tree/master/example)
 
 ## Build Your Own Board
