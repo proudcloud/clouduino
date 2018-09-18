@@ -24,7 +24,7 @@ void setup() {
   digitalWrite(SPI_CS, HIGH);
 
   // initialize serial
-  Serial.begin(115200);
+  Serial.begin(115200);     
 
   // initialize SPI interface for MCP3208
 	SPISettings settings(ADC_CLK, MSBFIRST, SPI_MODE0); 
@@ -47,6 +47,7 @@ void loop() {
   // get analog value
   uint16_t val = adc.toAnalog(raw);
 
+//// Read from the output using Serial monitor at 115200 baud rate.
   // readed value
   Serial.print("value: ");
   Serial.print(raw);

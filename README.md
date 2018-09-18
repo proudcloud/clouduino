@@ -1,6 +1,6 @@
 # Clouduino
 
-![Logo](logo.png)
+![Logo](/docs/images/logo.png)
 
 Clouduino is a fully open-source, WiFi mesh-enabled embedded development platform. 
 
@@ -20,9 +20,9 @@ This project is still at it's infancy. At the moment, the schematic diagram, bre
 - IEEE 802.11 b/g/n WiFi (w/ WEP, WPA, WPA2)
 
 ## Getting Started
-Check out Get Started Guide [here](https://github.com/proudcloud/clouduino/tree/master/getStarted)
+Check out our Get Started Guide [here](https://github.com/proudcloud/clouduino/tree/master/getStarted)
 
-### Build Your Board
+### Build Your Own Board
 
 Schematic diagrams and breadboard prototype can be found in [this folder](https://github.com/proudcloud/clouduino/tree/master/Schematic)
 
