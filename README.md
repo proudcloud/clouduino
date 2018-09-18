@@ -20,14 +20,14 @@ This project is still at it's infancy. At the moment, the schematic diagram, bre
 - IEEE 802.11 b/g/n WiFi (w/ WEP, WPA, WPA2)
 
 ## Getting Started
-
+Check out Get Started Guide [here](https://github.com/proudcloud/clouduino/tree/master/getStarted)
 
 ### Build Your Board
 
-Schematic diagrams and breadboard prototype can be found in this folder
+Schematic diagrams and breadboard prototype can be found in [this folder](https://github.com/proudcloud/clouduino/tree/master/Schematic)
 
 ### Installation
 
-1. Download and install Arduino IDE
-2. Follow thjis guide to configure the IDE and uploade your first sketch
-3. Follow our examples
+1. Download and install [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+2. Follow [this guide](https://github.com/proudcloud/clouduino/tree/master/getStarted) to configure the IDE and uploade your first sketch
+3. Follow our [examples](https://github.com/proudcloud/clouduino/tree/master/example)
