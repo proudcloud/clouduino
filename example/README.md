@@ -1,5 +1,5 @@
 # Uploading Sketches to Clouduino using Arduino IDE #
-1. Enter Flash mode by toggling the switch to "Flash mode" the first 3 seconds upon connecting Clouduino to a USB port on your device. This mode allows sketches to be uploaded to your Clouduino. (For testers: Toggle switch for perfboard prototype, OMRON switch for PCB)
+1. Enter Flash mode by toggling the switch to "Flash mode" for the first 3 seconds of connecting Clouduino to a USB port on your device. This mode allows sketches to be uploaded to your Clouduino. (For testers: Toggle switch for perfboard prototype, OMRON switch for PCB)
 2. Check the Port number designated to your Clouduino.
     - For Windows: Find the COM Port number in the Device Manager
     - For MAC: Open terminal and type: "ls /dev/*"
