@@ -30,7 +30,7 @@ Check out our Get Started Guide [here](https://github.com/proudcloud/clouduino/t
 
 ## Build Your Own Board
 
-Schematic diagrams and breadboard prototype can be found in [this folder](https://github.com/proudcloud/clouduino/tree/master/Schematic)
+Schematic diagrams and breadboard prototype can be found in [this folder](https://github.com/proudcloud/clouduino/tree/master/schematics)
 
 The following parts and components are all you need for this project:
 1. ESP-12F (ESP8266 module) with breakout board.
