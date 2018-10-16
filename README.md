@@ -32,12 +32,30 @@ Check out our Get Started Guide [here](https://github.com/proudcloud/clouduino/t
 
 Schematic diagrams and breadboard prototype can be found in [this folder](https://github.com/proudcloud/clouduino/tree/master/schematics)
 
-The following parts and components are all you need for this project:
-- ESP-12F (ESP8266 module) with breakout board.
-- MCP23S17 - general purpose I/O expander IC
-- MCP3208 - 12bit, 8 channel Analogue to Digital Converter IC
-- FTDI breakout with 3.3V power supply
-- 2 Breadboards
-- Jumper wires or connecting wires
-- Header pins (optional)
-- 3.3V power supply (optional) - if to be deployed remotely :)
+[MCU]
+1 x ESP12F
+----------------------------------------------------------------
+[Peripherals]
+1 x MCP23S17 GPIO Expander (SOIC)
+1 x MCP3208 ADC (SOIC)
+----------------------------------------------------------------
+[Connectors and Interfacing]
+1 x FT230XS-R USB to Serial (SSOP)
+1 x USB-B Mini Connector
+2 x 16-pin Female/Male headers
+----------------------------------------------------------------
+[Power]
+1 x AMS1117 - 3.3 Regulator
+----------------------------------------------------------------
+[Others]
+2 x B250-13-F 50V 2A Schottky Diodes 
+4 x 10K 1% SMD 1206 Resistors
+2 x 27 ohm 1% SMD 1206 Resistors
+1 x 270 ohm 1% SMD 1206 Resistors
+1 x 470 ohm 1% SMD 1206 Resistors
+4 x 0.1uF 50V SMD 1206 Capacitor
+2 x 10uF 50V SMD 1206 Capacitor
+2 x 47pF 50V SMD 1206 Capacitor
+1 x SMD LED 1206 Green
+2 x OMRON BF-3 1000 THT Tact Switch 
+1 x Ferrite Bead 600/100mhz SMD 0805
