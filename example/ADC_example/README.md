@@ -1,7 +1,7 @@
 ﻿
 #		USING THE ADC PINS
 
-Clouduino uses the [Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Serial Interface Class](https://github.com/labfruits/mcp3208).
+Clouduino uses [Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Serial Interface](https://github.com/labfruits/mcp3208) providing it the following features to perform analog to digital conversion:
 
   * 12-bit resolution
   * 8 input channels
@@ -9,9 +9,8 @@ Clouduino uses the [Microchip 2.7V 8-Channel 12-Bit A/D Converters with SPI Seri
   * Fixed 3.3V Single supply operation
   * Fixed 3.3V Reference voltage
 
-Here are commonly used methods in controlling the ADC pins for Clouduino. 
-
-   * Channel
+## Cheatsheet for ADC pins on Clouduino: 
+   * Channels
    * MCP3208()
    * pinMode()
    * digitalWrite()
@@ -24,9 +23,9 @@ Here are commonly used methods in controlling the ADC pins for Clouduino.
    * getAnalogRes()
 
 
-##            Methods and Functions
 
-### Channel ch      
+
+### Channels      
 
     SINGLE_0 = 0b1000,      // single channel 0 
     SINGLE_1 = 0b1001,      // single channel 1 
@@ -47,13 +46,9 @@ Here are commonly used methods in controlling the ADC pins for Clouduino.
     DIFF_3NP = 0b0111       // differential channel 3 (input 6-,7+) 
 
 
-
-
 ### MCP3208() ###
 
-Description
-
-Initiates a MCP3208 object. The chip select pin must be already configured as output. The default SPI interface will be used for communication.
+Initiates MCP3208 object. The chip select pin must be already configured as output. The default SPI interface will be used for communication.
 
 Syntax
 
@@ -76,8 +71,6 @@ Example
 
 
 ### read() ###
-
-Description    
 
 Reads the supplied channel. The SPI interface must be initialized and put in a usable state before calling this function.
 
@@ -110,8 +103,6 @@ Example 3
 
 ### testSplSpeed() ###
 
-Description
-
 Performs a sampling speed test. The SPI interface must be initialized and put in a usable state before calling this function.
 
 Syntax
@@ -136,8 +127,6 @@ Example
 
 ### toAnalog() ###
 
-Description
-
 Converts the supplied raw value to an analog value in mV based on the defined reference voltage.
 
 Syntax
@@ -161,8 +150,6 @@ Example
 
 
 ### toDigital() ###
-
-Description
 
 Converts the supplied analog value to the digital representation based on the defined reference voltage.
 
@@ -189,8 +176,6 @@ Example
 
 ### getVref() ###
 
-Description
-
 Returns the reference voltage.
 
 Syntax
@@ -213,8 +198,6 @@ Example
 
 
 ### getAnalogRes() ###
-
-Description
 
     Returns the analog resolution in µV based on the defined reference voltage.
 

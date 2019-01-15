@@ -3,13 +3,13 @@
 
 Clouduino uses the [Microchip MCP23S17 SPI I/O Expander Class created by Cort Buffington & Keith Neufeld](https://github.com/n0mjs710/MCP23S17).
 
-The goal of their implementation is to provide a software interface that mimics the existing Arduino I/O functions such as:
+Their implementation provides a software interface that mimics the existing Arduino I/O functions such as:
 
   * pinMode(pin, mode)
   * digitalWrite(pin, value)
   * digitalRead(pin)
 
-Here are commonly used methods and functions for controlling the GPIO pins of Clouduino. 
+##  Cheatsheet for GPIO pins on Clouduino
 
    * MCP()
    * begin()
@@ -23,14 +23,9 @@ Here are commonly used methods and functions for controlling the GPIO pins of Cl
    * byteRead()
 
 
-##			METHODS AND FUNCTIONS
-
-
 ### MCP() ###
 
-Description
-
-Instantiates the GPIO expander chip as an object.
+Instantiates the MCP23S17 (GPIO expander chip) as an object.
 
 Syntax
 
@@ -56,8 +51,6 @@ Example
 
 ### begin() ###
 
-Description
-
 Enable the SPI bus and configure the slave select pin for this object. You must call this in the Arduino void setup()function.
 
 Syntax
@@ -78,8 +71,6 @@ Example
 
 
 ### pinMode() ###
-
-Description
 
 Configure pin(s) as either input or output on the selected object (device specified by an address)
         
@@ -119,8 +110,6 @@ Example 2
 
 ### pullupMode() ###
 
-Description
-
 Configure the weak pull-up resistors on pins defined as inputs
 This has no effect on pins that are configured as outputs.
 
@@ -156,8 +145,6 @@ Example 2
 
 
 ### inputInvert() ###
-
-Description
 
 Configure inversion on pins configured as inputs.
 This will cause an inverted input pin to read as "LOW" (0) when it is actually in a high state, or as "HIGH" (1) when it is actually in a low state. This has no effect on pins that are configured as outputs.
@@ -195,8 +182,6 @@ Example 2
 
 ### digitalWrite() ###
 
-Description
-
 Write a "HIGH" or "LOW" value to a digital I/O pin(s)
 
 Syntax
@@ -232,8 +217,6 @@ Example 2
 
 ### digitalRead() ###
 
-Description
-
 Reads the value of input pin(s), either "HIGH" ("1") or "LOW" ("0)
 
 Syntax
@@ -245,7 +228,7 @@ Syntax
 Parameters
 
     object_name: the name given when this object was created
-    pin: the pin number (1-16) who's value will be read. If no pin number is supplied, a word will be read containing the input state of all pins. The values for pins configured as output should be disregarded if the "word-mode" version is used.
+    pin: the pin number (1-16) whose value will be read. If no pin number is supplied, a word will be read containing the input state of all pins. The values for pins configured as output should be disregarded if the "word-mode" version is used.
 
 Returns
 
@@ -269,8 +252,6 @@ Example 2
 
 
 ### wordWrite() ###
-
-Description
 
 This is an advanced method to write a register pair in the MCP23S17. This class operates the MCP23S17 in "BANK=0" mode. The intention is that a registers for both ports may be written by supplying a single word as an argument. The low byte is written to the register address supplied, and the high byte to the next higher register address.
 
@@ -296,10 +277,7 @@ Example
 
 
 
-
 ### byteWrite() ###
-
-Description
 
 This is an advanced method to write any single register in the MCP23S17.
 
@@ -327,8 +305,6 @@ Example
 
 
 ### byteRead() ###
-
-Description
 
 This is an advanced method to read any single register in the MCP23S17.
 
