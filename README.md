@@ -4,7 +4,7 @@
 
 Clouduino is a fully open-source, WiFi mesh-enabled embedded development platform.
 
-This project is still at it's infancy. At the moment, the schematic diagram, breadboard prototype, and PCB layout for the first version is available for building the first version of the board: Clouduino Stratus. We also included sample code to get you started. We will be producing limited quantities of the board soon. In the meantime, let's build our own boards, send us your feed back and help this project grow.
+This project is still in its infancy. At the moment, the circuit design and PCB layout for the initial prototype version is available for building the initial iteration of the board: Clouduino Stratus. We also included sample code to get you started. We will be producing limited quantities of the board soon. In the meantime, let's build our own boards, send us your feed back and help this project grow.
 
 ## Specs
 
@@ -47,17 +47,22 @@ Schematic diagrams and breadboard prototype can be found in [this folder](https:
 - 2 x 16-pin Female/Male headers
 
 #### Power
-- 1 x AMS1117 - 3.3 Regulator
+ - 1 x AMS1117 - 3.3 Regulator (SOT-223-3)
+
 
 #### Others
-- 2 x B250-13-F 50V 2A Schottky Diodes 
-- 4 x 10K 1% SMD 1206 Resistors
-- 2 x 27 ohm 1% SMD 1206 Resistors
-- 1 x 270 ohm 1% SMD 1206 Resistors
-- 1 x 470 ohm 1% SMD 1206 Resistors
-- 4 x 0.1uF 50V SMD 1206 Capacitor
-- 2 x 10uF 50V SMD 1206 Capacitor
-- 2 x 47pF 50V SMD 1206 Capacitor
-- 1 x SMD LED 1206 Green
-- 2 x OMRON BF-3 1000 THT Tact Switch
-- 1 x Ferrite Bead 600/100mhz SMD 0805
+ - 1 x ECQ10A04-F Dual Schottky Barrier (TO-252)
+ - 2 x BC847W (SOT323)
+ - 7 x 10K 1% SMD 0603 Resistors
+ - 2 x 27 ohm 1% SMD 0603 Resistors
+ - 3 x 270 ohm 1% SMD 0603 Resistors
+ - 2 x 470 ohm 1% SMD 0603 Resistors
+ - 3 x 0.1uF 50V SMD 0603 Capacitor
+ - 2 x 10uF 50V SMD 0603 Capacitor
+ - 1 x 1uF 50V SMD 0603 Capacitor
+ - 2 x 47pF 50V SMD 0603 Capacitor
+ - 1 x SMD LED 0603 Green
+ - 1 x SMD LED 0603 Yellow
+ - 1 x SMD LED 0603 Blue
+ - 2 x OMRON BF-3 1000 THT Tact Switch 
+ - 1 x Ferrite Bead 600/100mhz SMD 0603
