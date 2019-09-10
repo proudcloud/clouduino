@@ -31,7 +31,7 @@ Let's start with installing the ESP8266 board driver with boards manager in Ardu
     - ESP8266 Arduino core github [link](https://github.com/esp8266/Arduino)
  
 There are two essential libraries you must install for Clouduino: [MCP23S17](https://github.com/n0mjs710/MCP23S17) for controlling GPIO pins and [MCP3208](https://github.com/labfruits/mcp3208) for controlling ADC pins. 
-You have to import these libraries to Arduino IDE by simple following the steps below:
+You have to import these libraries to Arduino IDE by simply following the steps below:
 
 1. First download these libraries as ZIP file. No need to unzip, leave it as it is.
     - [MCP23S17](https://github.com/n0mjs710/MCP23S17)  - GPIO Expander
@@ -39,7 +39,7 @@ You have to import these libraries to Arduino IDE by simple following the steps 
 2. In the Arduino IDE, navigate to Sketch menu > Include Library > Add .ZIP Library > Select Add .ZIP Library > Find and open MCP3208-master ZIP file.
 3. Repeat step 2 for MCP23S17-master ZIP file.
    
-Note that you only have to install the ESP8266 board driver and the two essential libraries once. Do, however, check for library updates often at the library manager!
+Note that you only have to install the ESP8266 board driver and the two essential libraries once. Do, however, check for library updates often at the library manager
 
 ## Open your first sketch ##
 You are now ready to try out your first sketch in Arduino IDE.
